@@ -16,7 +16,7 @@ public class DiscountController {
 	}
 
 	@PostMapping("/discount")
-	private Sale getDiscountPercent(@RequestBody Sale sale) {		
+	private Sale getDiscountPercent(@RequestBody Sale sale) {
 		this.discountService.applyDiscount(sale);
 	    return sale;
 	}
